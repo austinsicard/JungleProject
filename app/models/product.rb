@@ -5,6 +5,7 @@ class Product < ActiveRecord::Base
 
   belongs_to :category
 
+  # Price is price_cents in database
   validates :name, presence: true
   validates :price, presence: true
   validates :quantity, presence: true
